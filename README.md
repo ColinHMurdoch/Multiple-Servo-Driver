@@ -42,3 +42,15 @@ The servo will be centralised.
 7. Operating a Lever/Switch should now operate the servo.
 
 
+## Source Files
+
+This repository contains three source files.
+- ServoDriverMultiv4.ino.  This is the main source file for the code which will control six servos.#
+- ServoDriverMultiTwoServos.ino.  This file has been configured to operate two servos.
+- ServoDriverMultiFourServos.ino.  This file has been configured to operate four servos.
+
+The code uses three libraries which will need to be loaded into the Arduino IDE
+1. EEPROM - This is part of the Arduino infrasructure.
+2. Button - 
+3. VarSpeedServo -
+
