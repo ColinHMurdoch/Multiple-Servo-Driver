@@ -11,7 +11,7 @@ The servos are operated by switches attached to the relevant input pins.  The pr
 **Please Note:**
 The servo control pins are attached to the Nano pins, but the servos should be powered by an indepedent 5V power supply.  Attempting to drive the servos from the Nano 5V pin would undoubtedly destroy the Nano.
 
-##Pin Configurations##
+## Pin Configurations
 
 **Servo Pins**
 - Servo 1 to pin 8
@@ -31,7 +31,7 @@ Four buttons can be connected temporarily to the following four pins in order to
 - High Button - Pin 5
 - Mode Button - Pin 4
 
-##Programming Method##
+## Programming Method
 1. To put the unit into program mode press the **PROG** button.  This will set the Nano into program mode on Servo Channel 1.  The Nano will flash the internal LED once to indicate channel.
 The servo will be centralised.
 2. To move the servo arm to the low position press the **LOW** button. If you hold the button down the arm will keep moving.
