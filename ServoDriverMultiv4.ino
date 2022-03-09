@@ -13,7 +13,7 @@ Operating paramaters are programmable and stored in the EEPROM
 #include <Button.h>
 #include <EEPROM.h>
 
-int NumberOfServos = 4; // Set this value to the number of servos in use.
+int NumberOfServos = 6; // Set this value to the number of servos in use.
 
 # define LEVER1 14 // the operating switch/lever1 A0
 # define LEVER2 15 // the operating switch/lever2 A1
@@ -103,8 +103,8 @@ void setup() {
   myservo1.attach(9);  // attaches the servo on pin 9 to the servo objec
   myservo2.attach(10);  // attaches the servo on pin 10 to the servo objec
   myservo3.attach(11);  // attaches the servo on pin 11 to the servo objec
-  //myservo4.attach(12);  // attaches the servo on pin 12 to the servo objec
-  //myservo5.attach(3);  // attaches the servo on pin 3 to the servo objec
+  myservo4.attach(12);  // attaches the servo on pin 12 to the servo objec
+  myservo5.attach(3);  // attaches the servo on pin 3 to the servo objec
 
   ClearLeverStates();
 
@@ -122,8 +122,8 @@ void loop() {
       CheckLever(LEVER2, 1);
       CheckLever(LEVER3, 2);
       CheckLever(LEVER4, 3);
-      //CheckLever(LEVER5, 4);
-      //CheckLever(LEVER6, 5); 
+      CheckLever(LEVER5, 4);
+      CheckLever(LEVER6, 5); 
       
     }
 

@@ -1,8 +1,8 @@
 # Multiple-Servo-Driver
 
-An ArduinoProgram to drive up to 6 servos on an Arduino Nano/Uno
+An ArduinoProgram to drive up to 6 servos on an Arduino Nano
 
-This program allows control of up to six low cost servo motors which may be sed for controlling model railway turnouts, signals or accessories using a small arduino processor.  It was originnaly intended for an arduino Nano.
+This program allows control of up to six low cost servo motors which may be used for controlling model railway turnouts, signals or accessories using a small arduino processor.  It was originnaly intended for an arduino Nano. It would be possible to use this on an arduino Uno.
 
 The program allows setting end points for the movement of the servos using a number of pushbuttons.  These values are stored in the EEPROM of the microprocessor.
 
@@ -22,11 +22,17 @@ The servo control pins are attached to the Nano pins, but the servos should be p
 - servo 6 to pin 3
 
 **Lever Pins**
-The operating levers/switches connect to pins 14 to 19 in order of the servos
+The operating levers/switches connect to the following pins:
+- Lever 1 to pin 14/A0
+- Lever 2 to pin 15/A1
+- Lever 3 to pin 16/A2
+- Lever 4 to pin 17/A3
+- Lever 5 to pin 18/A4
+- Lever 6 to pin 19/A5
 
 **Programming Buttons**
 Four buttons can be connected temporarily to the following four pins in order to set the servo end points:
-- Low Button - Pin 7
+- Low Button  - Pin 7
 - Prog Button - Pin 6
 - High Button - Pin 5
 - Mode Button - Pin 4
@@ -51,6 +57,9 @@ This repository contains three source files.
 
 The code uses three libraries which will need to be loaded into the Arduino IDE
 1. EEPROM - This is part of the Arduino infrasructure.
-2. Button - 
-3. VarSpeedServo -
+2. Button - This is a small library written by Michael Adams (Copyright (C) 2016 Michael D K Adams.) which can be downloaded from github.  https://github.com/madleech/Button.  the version used is included here for completeness.  Downoad the entire folder to your "Libaries" folder.
+3. VarSpeedServo - This library is a variation of the Arduino servo.h libraryand is available at https://github.com/netlabtoolkit/VarSpeedServo.  Once again the version I have used is included here.
+
+
+This code was written on the Arduino IDE.  to use under PlatformIO on VSCODE rename the .ino file to .cpp and move the **Startup** and **Loop** functions to the end of the code.
 
